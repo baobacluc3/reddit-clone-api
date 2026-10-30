@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1808.3719999999996 699.2" width="1808.3719999999996" height="699.2" style="--bg:#FFFFFF;--fg:#1E293B;--line:#64748B;--muted:#475569;--surface:#F8FAFC;--border:#CBD5E1;background:var(--bg)">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+  text { font-family: 'Inter', system-ui, sans-serif; }
+  svg {
+    /* Derived from --bg and --fg (overridable via --line, --accent, etc.) */
+    --_text:          var(--fg);
+    --_text-sec:      var(--muted, color-mix(in srgb, var(--fg) 60%, var(--bg)));
+    --_text-muted:    var(--muted, color-mix(in srgb, var(--fg) 40%, var(--bg)));
+    --_text-faint:    color-mix(in srgb, var(--fg) 25%, var(--bg));
+    --_line:          var(--line, color-mix(in srgb, var(--fg) 50%, var(--bg)));
+    --_arrow:         var(--accent, color-mix(in srgb, var(--fg) 85%, var(--bg)));
+    --_node-fill:     var(--surface, color-mix(in srgb, var(--fg) 3%, var(--bg)));
+    --_node-stroke:   var(--border, color-mix(in srgb, var(--fg) 20%, var(--bg)));
+    --_group-fill:    var(--bg);
+    --_group-hdr:     color-mix(in srgb, var(--fg) 5%, var(--bg));
+    --_inner-stroke:  color-mix(in srgb, var(--fg) 12%, var(--bg));
+    --_key-badge:     color-mix(in srgb, var(--fg) 10%, var(--bg));
+  }
+</style>
+<defs>
+  <marker id="arrowhead" markerWidth="8" markerHeight="5" refX="7" refY="2.5" orient="auto">
+    <polygon points="0 0, 8 2.5, 0 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+  <marker id="arrowhead-start" markerWidth="8" markerHeight="5" refX="1" refY="2.5" orient="auto-start-reverse">
+    <polygon points="8 0, 0 2.5, 8 5" fill="var(--_arrow)" stroke="var(--_arrow)" stroke-width="0.75" stroke-linejoin="round" />
+  </marker>
+</defs>
+<g class="subgraph" data-id="Core" data-label="NestJS Modular Monolith">
+  <rect x="40" y="215.8" width="1710.3719999999996" height="113.80000000000001" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="40" y="215.8" width="1710.3719999999996" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="52" y="229.8" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">NestJS Modular Monolith</text>
+</g>
+<g class="subgraph" data-id="Infra" data-label="Data &amp; Async Infrastructure">
+  <rect x="477.18383333333327" y="389.6" width="852.1479999999998" height="243.60000000000002" rx="0" ry="0" fill="var(--_group-fill)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <rect x="477.18383333333327" y="389.6" width="852.1479999999998" height="28" rx="0" ry="0" fill="var(--_group-hdr)" stroke="var(--_node-stroke)" stroke-width="1" />
+  <text x="489.18383333333327" y="403.6" font-size="12" font-weight="600" fill="var(--_text-sec)" dy="4.199999999999999">Data &amp; Async Infrastructure</text>
+</g>
+<polyline class="edge" data-from="Client" data-to="Gateway" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="893.7279166666665,76.9 893.7279166666665,124.9" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="Auth" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="893.7279166666665,161.8 893.7279166666665,210.8 169.97049999999996,210.8 169.97049999999996,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="Subreddit" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="893.7279166666665,161.8 893.7279166666665,210.8 412.20299999999986,210.8 412.20299999999986,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="Post" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="893.7279166666665,161.8 893.7279166666665,210.8 654.0649999999998,210.8 654.0649999999998,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="Comment" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="893.7279166666665,161.8 893.7279166666665,210.8 917.0454999999998,210.8 917.0454999999998,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="Vote" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="893.7279166666665,161.8 893.7279166666665,210.8 1168.5404999999998,210.8 1168.5404999999998,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="Search" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="893.7279166666665,161.8 893.7279166666665,210.8 1414.8484999999998,210.8 1414.8484999999998,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Gateway" data-to="Notif" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="893.7279166666665,161.8 893.7279166666665,210.8 1646.7069999999997,210.8 1646.7069999999997,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Core" data-to="PG" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1178.5404999999998,329.6 1178.5404999999998,371.6 992.2528333333331,371.6 992.2528333333331,513.4000000000001 948.3124999999998,513.4000000000001 948.3124999999998,549.4000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Core" data-to="Redis" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1188.5404999999998,329.6 1188.5404999999998,371.6 1222.0375,371.6 1222.0375,549.4000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Vote" data-to="BullMQ" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="1168.5404999999998,313.6 1168.5404999999998,375.35 841.2358333333332,375.35 841.2358333333332,437.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Post" data-to="BullMQ" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="654.0649999999998,313.6 654.0649999999998,375.35 841.2358333333332,375.35 841.2358333333332,437.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Comment" data-to="BullMQ" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="917.0454999999998,313.6 917.0454999999998,375.35 841.2358333333332,375.35 841.2358333333332,437.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="BullMQ" data-to="Notif" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="770.7273333333333,490.90000000000003 770.7273333333333,513.4000000000001 811.0398333333331,513.4000000000001 811.0398333333331,651.2 1760.3719999999996,651.2 1760.3719999999996,197.8 1675.9286666666662,197.8 1675.9286666666662,259.8" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="Post" data-to="S3" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="654.0649999999998,313.6 654.0649999999998,375.35 582.7013333333332,375.35 582.7013333333332,437.1" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="BullMQ" data-to="PG" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="841.2358333333332,490.90000000000003 841.2358333333332,520.1500000000001 916.7443333333331,520.1500000000001 916.7443333333331,549.4000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<polyline class="edge" data-from="BullMQ" data-to="Redis" data-style="solid" data-arrow-start="false" data-arrow-end="true" points="841.2358333333332,490.90000000000003 841.2358333333332,520.1500000000001 1176.390333333333,520.1500000000001 1176.390333333333,549.4000000000001" fill="none" stroke="var(--_line)" stroke-width="1" marker-end="url(#arrowhead)" />
+<g class="node" data-id="Client" data-label="Client / Swagger / k6 Load Test" data-shape="rectangle">
+  <rect x="783.0919166666665" y="40" width="221.27199999999996" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="893.7279166666665" y="58.45" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">Client / Swagger / k6 Load Test</text>
+</g>
+<g class="node" data-id="Gateway" data-label="NestJS API Layer (Guards, Throttler, Interceptors)" data-shape="rectangle">
+  <rect x="724.9234166666665" y="124.9" width="337.60899999999987" height="36.900000000000006" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="893.7279166666665" y="143.35000000000002" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)" dy="4.55">NestJS API Layer (Guards, Throttler, Interceptors)</text>
+</g>
+<g class="node" data-id="Auth" data-label="Auth &amp; Session Module
+(JWT + Refresh Token Rotation)" data-shape="rectangle">
+  <rect x="56" y="259.8" width="227.94099999999995" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="169.97049999999996" y="286.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="169.97049999999996" dy="-3.9000000000000012">Auth &amp; Session Module</tspan><tspan x="169.97049999999996" dy="16.900000000000002">(JWT + Refresh Token Rotation)</tspan></text>
+</g>
+<g class="node" data-id="Subreddit" data-label="Subreddit &amp; Mod Engine
+(Scoped RBAC + Audit Log)" data-shape="rectangle">
+  <rect x="311.9409999999999" y="259.8" width="200.52399999999994" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="412.20299999999986" y="286.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="412.20299999999986" dy="-3.9000000000000012">Subreddit &amp; Mod Engine</tspan><tspan x="412.20299999999986" dy="16.900000000000002">(Scoped RBAC + Audit Log)</tspan></text>
+</g>
+<g class="node" data-id="Post" data-label="Post &amp; Feed Module
+(Hot Score + Cursor Pagination)" data-shape="rectangle">
+  <rect x="540.4649999999999" y="259.8" width="227.19999999999993" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="654.0649999999998" y="286.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="654.0649999999998" dy="-3.9000000000000012">Post &amp; Feed Module</tspan><tspan x="654.0649999999998" dy="16.900000000000002">(Hot Score + Cursor Pagination)</tspan></text>
+</g>
+<g class="node" data-id="Comment" data-label="Comment Tree Module
+(PostgreSQL ltree + Wilson Score)" data-shape="rectangle">
+  <rect x="795.6649999999998" y="259.8" width="242.76099999999994" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="917.0454999999998" y="286.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="917.0454999999998" dy="-3.9000000000000012">Comment Tree Module</tspan><tspan x="917.0454999999998" dy="16.900000000000002">(PostgreSQL ltree + Wilson Score)</tspan></text>
+</g>
+<g class="node" data-id="Vote" data-label="Voting &amp; Karma Module
+(Idempotent + Atomic Upsert)" data-shape="rectangle">
+  <rect x="1066.426" y="259.8" width="204.22899999999996" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1168.5404999999998" y="286.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1168.5404999999998" dy="-3.9000000000000012">Voting &amp; Karma Module</tspan><tspan x="1168.5404999999998" dy="16.900000000000002">(Idempotent + Atomic Upsert)</tspan></text>
+</g>
+<g class="node" data-id="Search" data-label="Search Module
+(PG Full-Text tsvector + pg_trgm)" data-shape="rectangle">
+  <rect x="1298.6549999999997" y="259.8" width="232.38699999999997" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1414.8484999999998" y="286.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1414.8484999999998" dy="-3.9000000000000012">Search Module</tspan><tspan x="1414.8484999999998" dy="16.900000000000002">(PG Full-Text tsvector + pg_trgm)</tspan></text>
+</g>
+<g class="node" data-id="Notif" data-label="Notification Module
+(SSE Real-time + Inbox)" data-shape="rectangle">
+  <rect x="1559.0419999999997" y="259.8" width="175.32999999999998" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1646.7069999999997" y="286.7" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1646.7069999999997" dy="-3.9000000000000012">Notification Module</tspan><tspan x="1646.7069999999997" dy="16.900000000000002">(SSE Real-time + Inbox)</tspan></text>
+</g>
+<g class="node" data-id="PG" data-label="PostgreSQL 16+
+(ltree, pg_trgm, GIN Index)" data-shape="cylinder">
+  <rect x="822.0398333333331" y="556.4000000000001" width="189.40899999999996" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="822.0398333333331" y1="556.4000000000001" x2="822.0398333333331" y2="610.2" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1011.4488333333331" y1="556.4000000000001" x2="1011.4488333333331" y2="610.2" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="916.7443333333331" cy="610.2" rx="94.70449999999998" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="916.7443333333331" cy="556.4000000000001" rx="94.70449999999998" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="916.7443333333331" y="583.3000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="916.7443333333331" dy="-3.9000000000000012">PostgreSQL 16+</tspan><tspan x="916.7443333333331" dy="16.900000000000002">(ltree, pg_trgm, GIN Index)</tspan></text>
+</g>
+<g class="node" data-id="Redis" data-label="Redis
+(Feed Cache ZSET, Rate Limit, Session)" data-shape="cylinder">
+  <rect x="1039.4488333333331" y="556.4000000000001" width="273.8829999999999" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="1039.4488333333331" y1="556.4000000000001" x2="1039.4488333333331" y2="610.2" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="1313.3318333333332" y1="556.4000000000001" x2="1313.3318333333332" y2="610.2" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1176.390333333333" cy="610.2" rx="136.94149999999996" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="1176.390333333333" cy="556.4000000000001" rx="136.94149999999996" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="1176.390333333333" y="583.3000000000001" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="1176.390333333333" dy="-3.9000000000000012">Redis</tspan><tspan x="1176.390333333333" dy="16.900000000000002">(Feed Cache ZSET, Rate Limit, Session)</tspan></text>
+</g>
+<g class="node" data-id="BullMQ" data-label="BullMQ Workers
+(Karma Sync, Fan-out Notif, Score Decay)" data-shape="subroutine">
+  <rect x="700.2188333333332" y="437.1" width="282.0339999999999" height="53.800000000000004" rx="0" ry="0" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="708.2188333333332" y1="437.1" x2="708.2188333333332" y2="490.90000000000003" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="974.2528333333331" y1="437.1" x2="974.2528333333331" y2="490.90000000000003" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="841.2358333333332" y="464" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="841.2358333333332" dy="-3.9000000000000012">BullMQ Workers</tspan><tspan x="841.2358333333332" dy="16.900000000000002">(Karma Sync, Fan-out Notif, Score Decay)</tspan></text>
+</g>
+<g class="node" data-id="S3" data-label="MinIO / Cloudflare R2
+(Presigned URL Media)" data-shape="cylinder">
+  <rect x="493.18383333333327" y="444.1" width="179.03499999999997" height="53.80000000000001" fill="var(--_node-fill)" stroke="none" />
+  <line x1="493.18383333333327" y1="444.1" x2="493.18383333333327" y2="497.90000000000003" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <line x1="672.2188333333332" y1="444.1" x2="672.2188333333332" y2="497.90000000000003" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="582.7013333333332" cy="497.90000000000003" rx="89.51749999999998" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <ellipse cx="582.7013333333332" cy="444.1" rx="89.51749999999998" ry="7" fill="var(--_node-fill)" stroke="var(--_node-stroke)" stroke-width="0.75" />
+  <text x="582.7013333333332" y="471" text-anchor="middle" font-size="13" font-weight="500" fill="var(--_text)"><tspan x="582.7013333333332" dy="-3.9000000000000012">MinIO / Cloudflare R2</tspan><tspan x="582.7013333333332" dy="16.900000000000002">(Presigned URL Media)</tspan></text>
+</g>
+</svg>
